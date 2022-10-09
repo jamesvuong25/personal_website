@@ -1,0 +1,8 @@
+html, body {
+    background-color: rgb(14, 14, 14);
+    height: 1000px;
+    width: 100%;
+    color: white;
+    font-family: 'Rubik', serif;
+    font-size: x-large;
+}
