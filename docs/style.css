@@ -5,4 +5,26 @@ html, body {
     color: white;
     font-family: 'Rubik', serif;
     font-size: x-large;
+    margin: 0px auto;
+    padding: 15px;
 }
+
+.navigationHeader {
+    display: flex;
+    flex-direction: row;
+    /* border: 5px dotted blue; */
+}
+
+#name{
+    flex-basis: 30%;
+    margin-top: 18px;
+    line-height: 0%;
+}
+
+#navigationLinks  {
+    text-decoration: none;
+    flex-basis: 70%;
+    text-align: right;
+    margin-top: 30px;
+    font-size:medium;
+ }
