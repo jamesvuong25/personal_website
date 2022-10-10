@@ -188,10 +188,10 @@ a:hover {
     flex-basis: 30%;
     position: relative;
     top: -50px;
-    left: 60px;
+    left: 90px;
     object-fit:cover;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
  }
 
  #hr2 {
@@ -199,6 +199,7 @@ a:hover {
     top: -25px;
     background-color: white;
     width: 70%;
+    
  }
 
 #resume {
