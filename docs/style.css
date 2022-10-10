@@ -6,6 +6,7 @@ html {
 body {
     background-color: rgb(14, 14, 14);
     height: 100%;
+    width: 1785px;
     min-width: 576px;
     color: white;
     font-family: 'Rubik', serif;
