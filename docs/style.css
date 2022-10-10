@@ -1,7 +1,7 @@
 html, body {
     background-color: rgb(14, 14, 14);
     height: 100%;
-    min-width: 600px;
+    min-width: 576px;
     color: white;
     font-family: 'Rubik', serif;
     /* font-size: x-large; */
@@ -9,6 +9,13 @@ html, body {
     margin-left: 30px;
     margin-right: 30px;
     padding: 10px;
+    animation: fadeIn 1.5s;
+}
+/* uncomment this to have whole website fade during loading */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    50% {opacity: 1}
+    100% { opacity: 1;} 
 }
 
 .navigationHeader {
@@ -104,21 +111,28 @@ a:hover {
     font-size: 40px;
     position: relative;
     left: 290px;
-    top: -185px;
-    width: -20px;
-    height: -20px;
+    top: -199px;
   }
   
   @keyframes wave-animation {
       0% { transform: rotate( 0.0deg) }
-     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     10% { transform: rotate(25.0deg) }  /* play with  next 5 vals to make the waving more or less extreme */
      20% { transform: rotate(-8.0deg) }
-     30% { transform: rotate(14.0deg) }
-     40% { transform: rotate(-4.0deg) }
+     30% { transform: rotate(25.0deg) }
+     40% { transform: rotate(-15.0deg) }
      50% { transform: rotate(10.0deg) }
      60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
     100% { transform: rotate( 0.0deg) }
   }
+
+  #hr1 {
+    position: relative;
+    top: -15px;
+    background-color: white;
+    width: 70%;
+  }
+
+  
 .mainContent {
     display: flex;
     font-size: large;
@@ -130,15 +144,21 @@ a:hover {
 #profileSentences {
     flex-basis: 70%;
     /* border: 5px dotted red; */
+    padding: 0px;
+    margin: 0px auto;
+    height: 30%;
 }
 
-#gonzagaHyperlink {
-    color: cornflowerblue;
+#gonzagaHyperlink, #emailLink {
+    color: rgb(78, 139, 252);
     font-size: large;
     align-self: hover;
 }
-#gonzagaHyperLink:hover {
-    color:rgb(144, 177, 237);
+#gonzagaHyperlink:hover{
+    color:lightskyblue;
+}
+#emailLink:hover{
+    color:lightblue;
 }
 
  #profilePic, img{
@@ -147,7 +167,48 @@ a:hover {
     position: relative;
     top: 15px;
     left: 30px;
+    object-fit:cover;
+    width: 250px;
+    height: 250px;
  }
+
+ #hr2 {
+    position: relative;
+    top: -25px;
+    background-color: white;
+    width: 70%;
+ }
+
+#resume {
+    font-size: large;
+
+}
+
+#resumeDownload{
+    font-size: large;
+    align-self: hover;
+    color:rgb(78, 139, 252);;
+}
+#resumeDownload:hover{
+    color:mediumpurple;
+}
+
+#downloadResumeButton {
+    text-decoration: none;
+    color: white;
+    background-color:dodgerblue;
+    cursor:pointer;
+    padding: 12px 30px;
+    border-radius: 12px;
+    align-self: hover;
+    box-shadow: 0px 2px 5px rgb(89, 89, 89);
+    position: relative;
+    left: 200px;
+}
+#downloadResumeButton:hover {
+    background-color:rgb(176, 216, 255);
+    color: black;
+}
 
 #social {
     display: block;
