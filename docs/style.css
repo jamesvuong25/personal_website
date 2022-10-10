@@ -187,11 +187,11 @@ a:hover {
     border-radius: 50%;
     flex-basis: 30%;
     position: relative;
-    top: 15px;
-    left: 30px;
+    top: -50px;
+    left: 60px;
     object-fit:cover;
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
  }
 
  #hr2 {
