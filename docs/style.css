@@ -201,7 +201,7 @@ a:hover {
     top: -25px;
     background-color: white;
     width: 70%;
-    
+
  }
 
 #resume {
@@ -218,7 +218,7 @@ a:hover {
     color:mediumpurple;
 }
 
-#downloadResumeButton {
+#downloadResumeButton, #sendResumeButton {
     text-decoration: none;
     color: white;
     background-color:dodgerblue;
@@ -231,9 +231,17 @@ a:hover {
     left: 200px;
     font-size: 15px;
 }
-#downloadResumeButton:hover {
+
+#downloadResumeButton:hover, #sendResumeButton:hover {
     background-color:rgb(176, 216, 255);
     color: black;
+}
+
+#hr3 {
+    position: relative;
+    top: 40px;
+    background-color: white;
+    width: 70%;
 }
 
 #social {
